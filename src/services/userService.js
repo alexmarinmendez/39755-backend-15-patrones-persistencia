@@ -1,12 +1,13 @@
-// import UserDaoArray from "../daos/userDaoArray.js";
-// import UserDaoFile from "../daos/userDaoFile.js"
-import UserDaoBD from "../daos/userDaoBD.js"
+import PersistenceFactory from "../daos/persistenceFactory.js"
 
 export default class UserService {
     constructor() {
-        // this.userDao = new UserDaoArray()
-        // this.userDao = new UserDaoFile()
-        this.userDao = new UserDaoBD()
+        this.userDao
+        this.init()
+    }
+
+    init = async() => {
+        this.userDao = await PersistenceFactory.getPersistence()
     }
 
     getUsers = async() => {
