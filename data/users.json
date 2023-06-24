@@ -4,5 +4,17 @@
 		"last_name": "Oria",
 		"email": "susanaoria@gmail.com",
 		"id": 1
+	},
+	{
+		"first_name": "Zoila",
+		"last_name": "Baca",
+		"email": "zoilabaca@gmail.com",
+		"id": 2
+	},
+	{
+		"first_name": "Alex",
+		"last_name": "Marin",
+		"email": "alexmarinmendez@gmail.com",
+		"id": 3
 	}
 ]
